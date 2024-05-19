@@ -168,8 +168,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/"
                   aria-current="page"
@@ -181,8 +181,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/about"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/about"
                   onClick={() => setActive("/about")}
@@ -193,8 +193,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/process"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/process"
                   onClick={() => setActive("/process")}
@@ -205,8 +205,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/blog"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/blog"
                   onClick={() => setActive("/blog")}
@@ -217,8 +217,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/listings"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/listings"
                   onClick={() => setActive("/listings")}
@@ -229,8 +229,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/testimonials"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/testimonials"
                   onClick={() => setActive("/testimonials")}
@@ -241,8 +241,8 @@ export default function RootLayout() {
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/contact"
-                      ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
-                      : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                    ? "relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-700 dark:text-white"
+                    : "inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
                     } `}
                   to="/contact"
                   onClick={() => setActive("/contact")}
@@ -261,6 +261,13 @@ export default function RootLayout() {
         <Outlet />
       </main>
       <footer className="footer">
+        <div>
+          &emsp;&emsp;
+        </div>
+        <div>
+          &emsp;&emsp;
+        </div>
+
         <div className="gap-6 justify-between md:flex">
           <div className="flex-1">
             <div className="max-w-xs">
@@ -269,22 +276,32 @@ export default function RootLayout() {
                 Hassle-free property acquisition in Ghana
               </p>
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
-              <label className="block pt-4 pb-2">Stay up to date</label>
-              <div className="max-w-sm flex items-center border rounded-md p-1">
+            {/* <form onSubmit={(e) => e.preventDefault()}>
+              <label className="block pt-4 pb-2 text-gray-300">Stay up to date</label>
+              <div className="max-w-sm flex items-center border rounded-md p-1 bg-gray-800">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full p-2.5 outline-none"
+                  className="w-full p-2.5 outline-none text-gray-100"
                 />
                 <button className="p-2.5 rounded-md text-white bg-indigo-600 outline-none shadow-md focus:shadow-none sm:px-5">
                   Subscribe
                 </button>
               </div>
-            </form>
+            </form> */}
+
+
           </div>
+
           <div className="flex-1 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
-            {footerNavs.map((item, idx) => (
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+            {/* {footerNavs.map((item, idx) => (
               <ul className="space-y-4" key={idx}>
                 <h4 className="text-gray-800 font-medium">{item.label}</h4>
                 {item.items.map((el, idx) => (
@@ -298,7 +315,7 @@ export default function RootLayout() {
                   </li>
                 ))}
               </ul>
-            ))}
+            ))} */}
           </div>
         </div>
         <div className="mt-8 py-6 border-t items-center justify-between sm:flex">
