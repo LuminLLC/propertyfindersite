@@ -6,73 +6,11 @@ import { useState } from "react";
 
 export default function RootLayout() {
   const [isActive, setActive] = useState("/");
-  const footerNavs = [
-    {
-      label: "Company",
-      items: [
-        {
-          href: "javascript:void()",
-          name: "Partners",
-        },
-        {
-          href: "javascript:void()",
-          name: "Blog",
-        },
-        {
-          href: "javascript:void()",
-          name: "Team",
-        },
-        {
-          href: "javascript:void()",
-          name: "Careers",
-        },
-      ],
-    },
-    {
-      label: "Resources",
-      items: [
-        {
-          href: "javascript:void()",
-          name: "contact",
-        },
-        {
-          href: "javascript:void()",
-          name: "Support",
-        },
-        {
-          href: "javascript:void()",
-          name: "Docs",
-        },
-        {
-          href: "javascript:void()",
-          name: "Pricing",
-        },
-      ],
-    },
-    {
-      label: "About",
-      items: [
-        {
-          href: "javascript:void()",
-          name: "Terms",
-        },
-        {
-          href: "javascript:void()",
-          name: "License",
-        },
-        {
-          href: "javascript:void()",
-          name: "Privacy",
-        },
-        {
-          href: "javascript:void()",
-          name: "About US",
-        },
-      ],
-    },
-  ];
+
+
 
   return (
+
     <>
       {/* ========== HEADER ========== */}
       <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
@@ -88,31 +26,30 @@ export default function RootLayout() {
               aria-label="PropertyFinderGh"
             >
               <Link to="/">
-                <img
-                  src="/images/logo.png"
-                  className="w-40 logo-light"
-                  alt="Logo"
-                />
-                {/* <img
-                  src="/images/logo-dark.png"
-                  className="w-40 logo-dark hidden dark:block"
-                  alt="Logo"
-                /> */}
+                {/* Conditionally render the logo based on the current theme */}
+                <picture>
+                  <source srcSet="/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
+                  <img src="/images/logo-light.png" className="w-40" alt="Logo" />
+                </picture>
               </Link>
             </a>
             {/* End Logo */}
           </div>
+
           {/* Button Group */}
           <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
             <button
               type="button"
               className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white"
+              onClick={() => window.location.href = '/signin'}
             >
               Sign in
             </button>
             <button
               type="button"
               className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent bg-sky-700 text-white hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500 dark:text-white dark:hover:text-neutral-300"
+              onClick={() => window.location.href = '/signup'}
+
             >
               {"I'm a new client"}
             </button>
@@ -214,6 +151,7 @@ export default function RootLayout() {
                   Blog
                 </Link>
               </div>
+
               <div>
                 <Link
                   className={`${isActive && window.location.pathname == "/listings"
@@ -271,7 +209,11 @@ export default function RootLayout() {
         <div className="gap-6 justify-between md:flex">
           <div className="flex-1">
             <div className="max-w-xs">
-              <img src="/images/logo.png" className="w-40" />
+              {/* Footer Logo */}
+              <picture>
+                <source srcSet="/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
+                <img src="/images/logo-light.png" className="w-40" alt="Footer Logo" />
+              </picture>
               <p className="leading-relaxed mt-2 text-[15px]">
                 Hassle-free property acquisition in Ghana
               </p>

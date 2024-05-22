@@ -189,7 +189,7 @@ const ProcessSection = () => {
               {/* End Item */}
               <a
                 className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-                href="#"
+                href="/signup"
               >
                 <svg
                   className="flex-shrink-0 size-4"
