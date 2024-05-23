@@ -75,34 +75,7 @@ const ContactUs = () => {
                     </label>
                   </div>
                   {/* End Input */}
-                  {/* Input */}
-                  <div className="relative">
-                    <input
-                      type="text"
-                      id="hs-tac-input-company"
-                      className="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
-        focus:pt-6
-        focus:pb-2
-        [&:not(:placeholder-shown)]:pt-6
-        [&:not(:placeholder-shown)]:pb-2
-        autofill:pt-6
-        autofill:pb-2"
-                      placeholder="Company"
-                    />
-                    <label
-                      htmlFor="hs-tac-input-company"
-                      className="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
-          peer-focus:text-xs
-          peer-focus:-translate-y-1.5
-          peer-focus:text-neutral-400
-          peer-[:not(:placeholder-shown)]:text-xs
-          peer-[:not(:placeholder-shown)]:-translate-y-1.5
-          peer-[:not(:placeholder-shown)]:text-neutral-400"
-                    >
-                      Company
-                    </label>
-                  </div>
-                  {/* End Input */}
+
                   {/* Input */}
                   <div className="relative">
                     <input
@@ -155,7 +128,7 @@ const ContactUs = () => {
           peer-[:not(:placeholder-shown)]:-translate-y-1.5
           peer-[:not(:placeholder-shown)]:text-neutral-400"
                     >
-                      Tell us about your project
+                      Message
                     </label>
                   </div>
                   {/* End Textarea */}
@@ -241,60 +214,12 @@ const ContactUs = () => {
                     href="#mailto:example@site.co"
                     target="_blank"
                   >
-                    hello@example.so
+                    enablegrowthafrica@gmail.com
                   </a>
                 </div>
               </div>
               {/* End Item */}
-              {/* Item */}
-              <div className="flex gap-x-5">
-                <svg
-                  className="flex-shrink-0 size-6 text-neutral-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m3 11 18-5v12L3 14v-3z" />
-                  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
-                </svg>
-                <div className="grow">
-                  <h4 className="text-white font-semibold">Were hiring</h4>
-                  <p className="mt-1 text-neutral-400">
-                    Were thrilled to announce that were expanding our team and
-                    looking for talented individuals like you to join us.
-                  </p>
-                  <p className="mt-2">
-                    <a
-                      className="group inline-flex items-center gap-x-2 font-medium text-sm text-[#ff0] decoration-2 hover:underline focus:outline-none focus:underline"
-                      href="#"
-                    >
-                      Job openings
-                      <svg
-                        className="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </a>
-                  </p>
-                </div>
-              </div>
-              {/* End Item */}
+
             </div>
             {/* End Col */}
           </div>

@@ -3,8 +3,7 @@ import BenefitSection from "../components/BenefitsSection"
 import ProcessSection from "../components/ProcessSection"
 import BlogSection from "../components/BlogSection"
 import ListingSection from "../components/ListingSection"
-import TestimonialSection from "../components/TestimonialSection"
-import CTASection from "../components/CTASection"
+import TestimonialSection from "../components/TestimonialCTASection"
 export default function HomePage() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function HomePage() {
       <ListingSection />
       <BlogSection />
       <TestimonialSection />
-      <CTASection />
+
     </>
   );
 }

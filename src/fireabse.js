@@ -1,22 +1,16 @@
 // src/firebase.js
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCtw6MiGPrnVGmwV-OXmrdz0adnFlbnVlE",
+  authDomain: "propertyfinderghana.firebaseapp.com",
+  projectId: "propertyfinderghana",
+  storageBucket: "propertyfinderghana.appspot.com",
+  messagingSenderId: "311979779898",
+  appId: "1:311979779898:web:7c53cb79a29845e18ed203",
+  measurementId: "G-4JEK8WNG9X"
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-const firestore = firebase.firestore();
-const auth = firebase.auth();
-
-export { firestore, auth };
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
